@@ -4,6 +4,18 @@
 
 默认运行**离线体验模式**，数据均为虚构，不访问真实论坛。真实社区需要书面许可、站方 User API 配置和用户授权。
 
+> 当前是开发中的离线 MVP，不是水源官方客户端，也不是 fluxdo 的完整移植。尚未取得真实社区接入许可，未完成真实站点联调。
+
+## 验证状态
+
+- Android：Debug APK 已在 Android 15 模拟器安装、启动及持久化验证；没有真机 Profile 性能结论。
+- Windows：Release 编译、原生集成测试及启动通过。
+- Linux：Release 编译及原生集成测试通过，环境为 WSLg，不能代表独立 Linux 电脑性能。
+- iOS / macOS：已含工程，尚未在对应宿主验证。
+- 已知浏览问题：切换标签后列表滚动位置丢失；搜索失败时仍显示旧结果。详见 [浏览体验审计](docs/BROWSING_EXPERIENCE_AUDIT.md)。
+
+详细记录：[Android 验证](docs/VERIFICATION.md) · [原生桌面验证](docs/NATIVE_VALIDATION.md) · [真机 Profile](docs/PHYSICAL_PROFILE.md) · [真实社区接入准备](docs/ANDROID_LIVE_INTEGRATION.md)。报告中提到的本机 `dist/` 与 `artifacts/` 不随 Git 源码上传；公开仓库不能视为已提供所有平台安装包。
+
 ## 功能
 
 - 自适应手机底部导航 / 桌面侧边导航，Material 3，深浅色与系统主题。
